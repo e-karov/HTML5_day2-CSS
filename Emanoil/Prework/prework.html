@@ -1,0 +1,47 @@
+<!DOCTYPE html> <!-- <!DOCTYPE html> declaration defines this document to be an HTML -->
+
+<!--[if IE 9]>
+    .... some HTML here, used only by Internet Explorer 9
+<![endif]-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+</head>
+<body>
+    <h1>Adding an external webpage</h1>
+    <iframe src="https://codefactory.wien" width="500" height="500" frameborder="0"></iframe>
+
+    <h1>Google search doesn't allow iframes</h1>
+    <iframe src="https://www.google.com/webhp?igu=1" width="500" height="500" frameborder="0"></iframe>
+
+    <h1>Adding a video from youtube</h1>
+    <iframe width="500" height="315" allowfullscreen src="https://www.youtube.com/embed/G3e-cpL7ofc" title="HTML & CSS Full Course - Beginner to Pro (2022)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h1> Not all videos will work</h1>
+    <iframe  width="300" height= "150" src="https://www.youtube.com/embed/n4RjJKxsamQ"  title="YouTube video player" frameborder= "0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen></iframe>
+
+    <h1>Embedding Google Maps</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93836.36697795126!2d23.253907146115658!3d42.695536983378396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa85712687e499%3A0x29370f3a6e85350!2z0J_QsNGC0YDQuNCw0YDRiNC10YHQutCwINC60LDRgtC10LTRgNCw0LvQsCDigJ7QodCy0LXRgtC4INCQ0LvQtdC60YHQsNC90LTRitGAINCd0LXQstGB0LrQuOKAnA!5e0!3m2!1sbg!2sat!4v1673979541498!5m2!1sbg!2sat" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <h1>Autoplay example</h1>
+    <!-- <audio src="https://bigsoundbank.com/UPLOAD/ogg/0020.ogg" controls>Your browser does not support the audio element.</audio> -->
+    <audio controls>
+        <source src="https://bigsoundbank.com/UPLOAD/ogg/0005.ogg" type="audio/ogg">
+        <source src="https://bigsoundbank.com/UPLOAD/wav-en/0003.wav" type="audio/wav">
+        <source src="ttps://bigsoundbank.com/UPLOAD/mp3/0003.mp3" type="audio/mp3">
+        Your browser doesn't support the audio element.
+    </audio>
+
+    <h1>Video example with animated GIF preview</h1>
+    <video controls width="480" poster="https://media0.giphy.com/media/l0JMrPWRQkTeg3jjO/giphy.gif?cid=ecf05e47j118bxshadde09ectxtdw4t2idw5lvn8b77etu6i&rid=giphy.gif&ct=g">
+        <source src="media/VID_20211017_141439.mp4" type="video/mp4">
+        <source src="https://music.youtube.com/watch?v=3EXPjVC-zN8&feature=share" type="video/webm">
+        Your browser doesn't support HTML5 video tags.
+    </video>
+
+</body>
+</html>
